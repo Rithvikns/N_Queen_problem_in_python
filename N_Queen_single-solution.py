@@ -4,7 +4,7 @@ def print_chess(board):
   print("\n")
 
 
-def is_safe(board , row , col ):
+def is_safe(board , row , col , n ):
 
     # chech if any other queen exist horizontally
           
@@ -25,7 +25,7 @@ def is_safe(board , row , col ):
 
     
     i, j = row , col
-    while i>=0 , j<=n:
+    while i>=0 , j<n:
       if board[i][j]:
           return False
       i-=1
@@ -40,7 +40,7 @@ def backtrackin_function(board , row , n , solution):
     return
 
   for col in range(n):
-    if is_safe(board , row , col):
+    if is_safe(board , row , col , n):
       board[row][col] = 1
       backtracking_function(board , row +1 , n , solutions)
       board[row][col] = 0
@@ -50,3 +50,11 @@ def n_queen(n):
   solutions = []
   backtracking_function(board , 0 , n , solutions)
   return solutions
+
+
+n = 8
+solutions = n_queens(n)
+for sol in solutions:
+    for row in sol:
+        print(row)
+    print("\n" + "="*10 + "\n")
