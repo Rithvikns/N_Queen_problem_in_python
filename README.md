@@ -7,7 +7,6 @@ here are some of the examples you can visualise to place 8 queens without attack
 ![image](https://github.com/user-attachments/assets/54d70fb7-ebc9-4f3b-81fa-1e3acfe7d641)
 
 
-example 3
 ![image](https://github.com/user-attachments/assets/2b519457-a4ea-45d8-9e21-dc87ff9c0a20)
 
 Now coming to the problem , no two queens should attack each other . There are only 92 unique ways that exist to place 8 queens on a chess board without attacking each other.
