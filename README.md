@@ -26,6 +26,6 @@ The second function is used to check if placing the next queen is safe or not.
 the third function is used for backtracing.
 Fourth function is used to define variables also the main function.
 
-the is safe function checks for upper left diagonal , upper right diagonal and horisontal queen exist or not .
+the is safe function checks for upper left diagonal , upper right diagonal and horizontally , if queen exist or not .
 
 ![image](https://github.com/user-attachments/assets/449f2de3-2f6f-42ac-8d99-4b0af12efad2)
